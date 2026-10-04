@@ -82,3 +82,30 @@ tbody tr.us td:first-child{box-shadow:inset 3px 0 0 var(--ev-v)}
 
 @media(max-width:820px){.top{gap:8px}.wm span{display:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* ===== v3: legibility and hierarchy ===== */
+.side{flex-basis:300px}
+.wm span{color:#7A838E}
+.ctl label,.blk h3,.jump b,.frames>h3{color:#8F98A3}
+.blk{padding:18px 16px}
+.blk h3{font-size:10.5px;margin-bottom:14px}
+.layer{font-size:13.5px;padding:8px}
+.layer .k{font-size:10px}
+.evrow{font-size:13px;padding:9px 8px}
+.evrow .pc{font-size:13px}
+.defs{font-size:12px;line-height:1.55}
+.defs p{margin-bottom:10px}
+.measured,.ep{font-size:10.5px}
+.jump button{font-size:11.5px;padding:11px 16px}
+.tag{font-size:11px;padding:5px 10px}
+.methodlbl{font-size:11px;padding:5px 11px}
+.scaletxt{font-size:11px}
+.frames{padding:12px 16px;gap:10px}
+.fr{min-width:84px;padding:6px}
+.fr canvas{width:72px;height:72px}
+.fr .d,.fr .c{font-size:10px}
+.stat .l{font-size:10px}
+.th canvas{width:72px;height:72px}
+th,td{padding:10px 12px;font-size:12px}
+.card p{font-size:12.5px}
+.foot{font-size:10px}
+#map{filter:saturate(.8) brightness(.96)}
