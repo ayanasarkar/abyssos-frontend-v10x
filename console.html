@@ -878,11 +878,11 @@ function dimExcept(k){
 
 function drawVectors(){
   const {W,H} = st, S = st.scene;
-  S.roads.forEach(rd => { ctx.strokeStyle = EV[rd.ev].hex; ctx.globalAlpha = 0.95;
-    poly(ctx, rd.pts, W, H, rd.w * 1.5); });
-  ctx.globalAlpha = 1; ctx.lineWidth = Math.max(1, st.dpr);
+  S.roads.forEach(rd => { ctx.strokeStyle = EV[rd.ev].hex; ctx.globalAlpha = 0.72;
+    poly(ctx, rd.pts, W, H, rd.w * 0.65); });
+  ctx.globalAlpha = 0.7; ctx.lineWidth = Math.max(1, st.dpr);
   S.builds.forEach(b => { ctx.strokeStyle = EV[b.ev].hex;
-    ctx.strokeRect(b.x*W, b.y*H, b.w*W, b.h*H); });
+    ctx.strokeRect(b.x*W, b.y*H, b.w*W, b.h*H); }); ctx.globalAlpha = 1;
 }
 
 function drawChanges(){
@@ -904,7 +904,7 @@ function drawPhantoms(){
   const {W,H} = st;
   ctx.save();
   ctx.strokeStyle = EV.P.hex; ctx.globalAlpha = 0.95;
-  st.scene.phantoms.forEach(p => poly(ctx, p.pts, W, H, p.w * 1.6));
+  st.scene.phantoms.forEach(p => poly(ctx, p.pts, W, H, p.w * 1.1));
   ctx.setLineDash([6*st.dpr, 5*st.dpr]); ctx.globalAlpha = 0.8;
   ctx.strokeStyle = EV.V.hex; ctx.lineWidth = Math.max(1, st.dpr);
   st.scene.phantoms.forEach(p => {
